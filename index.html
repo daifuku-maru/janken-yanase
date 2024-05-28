@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1 class="page-title">じゃんけんアプリ</h1>
+
+    <div class="box">
+      <div class="box-item">
+        <span class="box-title">あなたの手：</span>
+        <button id="btn1" class="form-control">グー</button>
+        <button id="btn2" class="form-control">チョキ</button>
+        <button id="btn3" class="form-control">パー</button>
+      </div>
+      <div class="box-item">
+        <span class="box-title">コンピューターの手：</span>
+        <span id="cpute">あなたが手を選択すると表示されます</span>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="text-center result">
+      結果は・・・・
+      <p id="result"></p>
+    </div>
+
+    <div>
+      <div id="scoretitle">現在の成績</div>
+      <div class="scoreboard">
+        <div class="score">
+          <div>YOU</div>
+          <div id="yourscore">0</div>
+        </div>
+        <div class="score">
+          <div>CPU</div>
+          <div id="cpuscore">0</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
